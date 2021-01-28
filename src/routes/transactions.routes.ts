@@ -27,7 +27,7 @@ transactionsRouter.get('/', async (request, response) => {
 });
 
 transactionsRouter.get('/teste', async (request, response) => {
-  return response.json({ ok: true });
+  return response.json({ ok: 'ok' });
 });
 
 transactionsRouter.post('/', async (request, response) => {
