@@ -26,6 +26,10 @@ transactionsRouter.get('/', async (request, response) => {
   });
 });
 
+transactionsRouter.get('/teste', async (request, response) => {
+  return response.json({ ok: true });
+});
+
 transactionsRouter.post('/', async (request, response) => {
   const { title, value, type, category } = request.body;
 
